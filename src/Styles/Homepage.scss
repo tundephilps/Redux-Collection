@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Shrikhand');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700|Shrikhand");
 
-$nav-item-bg-clr: #2269BB;
-$nav-item-bg-clr-hvr: #1E1E1E;
+$nav-item-bg-clr: #2269bb;
+$nav-item-bg-clr-hvr: #1e1e1e;
 $nav-item-txt-clr: white;
 $ts: 0.3s;
 $td: 0.05s;
@@ -11,25 +11,24 @@ $td: 0.05s;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
   background-image: url(https://hk.insight.com/content/dam/insight-web/sitesections/tech-journal/fall-2021/article-images/fall2021-techjournal-di-cloudedge-thumb.jpg);
   background-size: cover;
-  
+
   @media (min-width: 450px) {
     font-size: 1.25rem;
   }
 }
 
-#todo{
+#todo {
   background-image: url(https://hk.insight.com/content/dam/insight-web/sitesections/tech-journal/fall-2021/article-images/fall2021-techjournal-di-cloudedge-thumb.jpg) !important;
-  
 }
 
-#counter{
+#counter {
   display: flex;
-  background: url("../../images/Counter.png");
+  background: url("../images/Counter.png");
   object-fit: initial !important;
   background-position: center;
   background-size: contain;
@@ -37,59 +36,52 @@ body {
   position: relative;
 }
 
-#Login{
-  background: url("../../images/Login.png");
-  object-fit: initial !important;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-#Diary{
-  background: url("../../images/Diary.png");
-  object-fit: initial !important;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-#Todo{
-  background: url("../../images/Todo.png");
-  object-fit: initial !important;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-#Table{
-  background: url("../../images/table.png");
-  object-fit: initial !important;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-#CRUD{
-  
-  background: url("../../images/manage.png");
+#Login {
+  background: url("../images/Login.png");
   object-fit: initial !important;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#Form{
-    
-  background: url("../../images/Form.png");
+#Diary {
+  background: url("../images/Diary.png");
   object-fit: initial !important;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
 
+#Todo {
+  background: url("../images/Todo.png");
+  object-fit: initial !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#Table {
+  background: url("../images/table.png");
+  object-fit: initial !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#CRUD {
+  background: url("../images/manage.png");
+  object-fit: initial !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#Form {
+  background: url("../images/Form.png");
+  object-fit: initial !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .page-header {
@@ -120,23 +112,23 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   z-index: 100;
-  
+
   a {
     color: darken($nav-item-bg-clr, 20%);
     text-decoration: none;
   }
 }
 
-.info{
+.info {
   margin-top: 25rem;
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
 }
 .page-title {
   margin-bottom: 1.5rem;
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
   font-size: 2rem;
   line-height: 1.2;
-  
+
   @media (min-width: 450px) {
     font-size: 3rem;
   }
@@ -154,9 +146,7 @@ nav {
   background-color: black;
   opacity: 0;
   transform: translateY(-100%);
-  transition: 
-    opacity $ts * 1.5 $ts * 1.5 ease,
-    transform 0s $ts * 4 ;
+  transition: opacity $ts * 1.5 $ts * 1.5 ease, transform 0s $ts * 4;
 }
 
 .menu ol {
@@ -164,18 +154,18 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   width: 100%;
-  
+
   @media (min-width: 820px) {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   li {
     display: grid;
     grid-column: span 1;
     grid-gap: 1rem;
     overflow: hidden;
   }
-  
+
   a {
     display: flex;
     align-items: center;
@@ -188,7 +178,7 @@ nav {
     color: $nav-item-bg-clr;
     background-color: $nav-item-bg-clr;
     border-radius: 2px;
-    
+
     @media (min-width: 450px) {
       font-size: 1.75rem;
     }
@@ -202,21 +192,21 @@ nav {
 .menu .sub-menu {
   padding: 0;
   grid-template-columns: repeat(2, 1fr);
-  
+
   @media (min-width: 500px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   li a {
     font-size: 0.85rem;
     color: darken($nav-item-bg-clr, 15%);
     background-color: darken($nav-item-bg-clr, 15%);
-    
+
     @media (min-width: 450px) {
       font-size: 1rem;
     }
   }
-  
+
   li:nth-child(3n) {
     grid-column: span 2;
 
@@ -237,7 +227,7 @@ nav {
   z-index: 100;
   color: green !important;
   &:before {
-    content: '×';
+    content: "×";
     position: absolute;
     top: 0;
     left: 0;
@@ -249,7 +239,7 @@ nav {
     transition: opacity $ts ease;
     color: green !important;
   }
-  
+
   span {
     display: block;
     position: relative;
@@ -259,23 +249,23 @@ nav {
     border-radius: 2px;
     transition: transform $ts ease;
     transform-origin: 100% 100%;
-    
+
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
         transition-delay: $ts + ($td * $i);
       }
     }
-    
+
     &:nth-child(1),
     &:nth-child(2) {
       grid-column: span 3;
     }
-        
+
     &:nth-child(3),
     &:nth-child(6) {
       grid-column: span 2;
     }
-  
+
     &:nth-child(4),
     &:nth-child(5) {
       grid-column: span 4;
@@ -285,44 +275,41 @@ nav {
 
 #menu-toggle-input {
   display: none;
-  
+
   &:checked ~ .menu-toggle {
     span {
       transform: scaleX(0);
-      
+
       @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
           transition-delay: $td * $i;
         }
       }
     }
-    
+
     &:before {
       opacity: 1;
       transition-delay: $ts * 2.5;
     }
   }
-  
+
   &:checked ~ nav {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0s;
-    
+
     a {
       color: $nav-item-txt-clr;
       transform: translate(0, 0);
     }
-    
+
     @for $i from 1 through 5 {
       > ol > li:nth-child(#{$i}) > a {
-        transition: 
-          color $ts ($ts * 2.75),
-          transform $ts ($ts + $td * $i) ease;
+        transition: color $ts ($ts * 2.75), transform $ts ($ts + $td * $i) ease;
       }
 
       .sub-menu > li:nth-child(#{$i}) > a {
-        transition: 
-          color $ts ($ts * 2.75),
+        transition: color $ts ($ts * 2.75),
           transform $ts ($ts * 1.5 + $td * $i) ease;
       }
     }
@@ -332,15 +319,11 @@ nav {
 @for $i from 1 through 5 {
   .menu > ol > li:nth-child(#{$i}) > a {
     transform: translate(calc(-100% - 12px), 0);
-    transition: 
-      color $ts,
-      transform $ts ($ts / 2 + $td * $i) ease;
+    transition: color $ts, transform $ts ($ts / 2 + $td * $i) ease;
   }
-  
+
   .sub-menu > li:nth-child(#{$i}) > a {
     transform: translate(0, calc(-100% - 12px));
-    transition: 
-      color $ts,
-      transform $ts ($ts / 2 + $td * $i) ease;
+    transition: color $ts, transform $ts ($ts / 2 + $td * $i) ease;
   }
 }
